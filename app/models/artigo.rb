@@ -1,0 +1,2 @@
+class Artigo < ApplicationRecord
+end

@@ -1,0 +1,12 @@
+<h1>Artigos</h1>
+
+<ul>
+  <% @artigos.each do |artigo| %>
+    <li>
+        <a href="/artigos/<%= artigo.id %>">
+            <%= artigo.título%>
+        </a><br><br>
+        <%= artigo.conteúdo %> <br><br><br><br>
+    </li>
+  <% end %>
+</ul>
