@@ -4,17 +4,17 @@
 
 <%= form_with model: @artigo do |form| %>
     <div>
-        <%= form.label :título %><br>
-        <%= form.text_field :título %>
-        <% @artigo.errors.full_messages_for(:título).each do |message| %>
+        <%= form.label :title %><br>
+        <%= form.text_field :title %>
+        <% @artigo.errors.full_messages_for(:title).each do |message| %>
             <div><%= message %></div>
         <% end %>
     </div>
 
     <div>
-        <%= form.label :conteúdo %><br>
-        <%= form.text_area :conteúdo %>
-        <% @artigo.errors.full_messages_for(:conteúdo).each do |message| %>
+        <%= form.label :contents %><br>
+        <%= form.text_area :contents %>
+        <% @artigo.errors.full_messages_for(:contents).each do |message| %>
             <div><%= message %></div>
         <% end %>
     </div>

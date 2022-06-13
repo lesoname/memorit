@@ -4,9 +4,9 @@
   <% @artigos.each do |artigo| %>
     <li>
         <a href="/artigos/<%= artigo.id %>">
-            <%= artigo.título%>
+            <%= artigo.title%>
         </a><br><br>
-        <%= artigo.conteúdo %> <br><br><br><br>
+        <%= artigo.contents %> <br><br><br><br>
     </li>
   <% end %>
 </ul>
