@@ -1,16 +1,20 @@
-<h1>Artigos</h1>
+<h1 id="title">Lista de artigos artigos</h1>
 
-<ul>
+
+<div>
   <% @artigos.each do |artigo| %>
-    <li>
-        <a href="/artigos/<%= artigo.id %>">
+    <div id="li-article">
+        <a class="li-article-link" href="/artigos/<%= artigo.id %>">
             <%= artigo.title%>
-        </a><br><br>
-        <%= artigo.contents %> <br><br><br><br>
-        postado <%= time_tag artigo.created_at, "data-local": "time-ago" %>
-    </li>
+        </a>
+        <div id="posted-at">
+          ⏲ postado <%= time_tag artigo.created_at, "data-local": "time-ago" %>
+        </div>
+    </div>
   <% end %>
-</ul>
+</div>
 
 
-<%= link_to "Novo Artigo", new_artigo_path %>
+<div id="new-article-content">
+  <%= button_to "Novo Artigo", new_artigo_path, class: 'new-article-button', method: :get %>
+</div>

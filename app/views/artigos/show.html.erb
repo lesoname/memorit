@@ -1,6 +1,10 @@
-<h1><%= @artigo.title %></h1>
-
-<p><%= @artigo.contents %></p>
-
+<h1 class="title-post-show">
+    <%= @artigo.title %>
+</h1>
+<div class="post-content">
+    <p>
+        <%= @artigo.contents %>
+    </p>
+</div>
 <%= link_to "Artigos", artigos_path %>
 
