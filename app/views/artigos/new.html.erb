@@ -13,7 +13,7 @@
 
     <div>
         <%= form.label :contents %><br>
-        <%= form.text_area :contents %>
+        <%= form.rich_text_area :contents %>
         <% @artigo.errors.full_messages_for(:contents).each do |message| %>
             <div><%= message %></div>
         <% end %>
