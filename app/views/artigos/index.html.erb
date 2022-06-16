@@ -8,8 +8,13 @@
             <%= artigo.title%>
         </a>
         <div id="posted-at">
-          ⏲ postado <%= time_tag artigo.created_at, "data-local": "time-ago" %>
+          🕣 postado <%= time_tag artigo.created_at, "data-local": "time-ago" %>
         </div>
     </div>
   <% end %>
+  
+  <div id="pagination">
+    <%= paginate @artigos %>
+  </div>
+  
 </div>

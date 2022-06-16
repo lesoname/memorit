@@ -137,6 +137,15 @@
     margin-right: 40px;
 }
 
+#pagination {
+    font-size: 1.2em;
+    align-content: center;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10vh;
+}
+
+
 
 /*   FORM   */
 

@@ -1,6 +1,6 @@
 class ArtigosController < ApplicationController
   def index
-    @artigos = Artigo.all
+    @artigos = Artigo.all.page(params[:page])
   end
 
   def show
@@ -11,7 +11,7 @@ class ArtigosController < ApplicationController
     @artigo = Artigo.new
   end
   
-  #definindo a criação do post
+  #def post creation
   def create
     @artigo = Artigo.new(artigo_params)
     
@@ -27,5 +27,5 @@ class ArtigosController < ApplicationController
     def artigo_params
       params.require(:artigo).permit(:title, :contents)
     end
-  
+
 end
