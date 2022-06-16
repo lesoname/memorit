@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <title>Blog</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
 
   <body>
+
+    <header>
+      <nav id="header-nav">
+        <a id="logo" href="<%= artigos_path %>">Blog</a>
+        <a><%= link_to "Novo artigo", new_artigo_path, class:'new-article-button', method: :get %></a>
+      </nav>
+    </header>
+    
     <%= yield %>
   </body>
+
 </html>
