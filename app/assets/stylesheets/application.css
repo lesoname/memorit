@@ -32,7 +32,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 5vh;
+    margin-bottom: 8vh;
 }
 
 
@@ -91,7 +91,7 @@
 
 #li-article {
     margin-top: 2vh;
-    margin-bottom: 5vh;
+    margin-bottom: 7vh;
     margin-left: 10vh;
     margin-right: 10vh;
     border-radius: 12px;
@@ -100,12 +100,13 @@
     box-shadow: rgba(50, 50, 93, 0.25) 0px 4px 8px -2px, rgba(0, 0, 0, 0.3) 0px 3px 4px -3px;
     border: 2px solid;
     cursor: pointer;
+    transition: 0.3s;
 
 }
 
 
 #li-article:hover {
-    border: 5px solid;
+    border: 7px solid;
     transition: 0.3s
 }
 
@@ -113,13 +114,13 @@
 .li-article-link{
     text-decoration: none;
     color: black;
-    font-size: 2.5vh;
+    font-size: 1.8vh;
     font-family: Poppins;
 }
 
 
 #posted-at {
-    font-size: .8em;
+    font-size: .6em;
 }
 
 
