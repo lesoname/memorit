@@ -37,6 +37,13 @@ class ArtigosController < ApplicationController
     end
   end
   
+  def destroy
+    @artigo = Artigo.find(params[:id])
+    @artigo.destroy
+
+    redirect_to root_path, status: :see_other
+  end
+
   private
     def artigo_params
       params.require(:artigo).permit(:title, :contents)

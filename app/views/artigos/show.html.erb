@@ -1,5 +1,10 @@
 <div>
-    <%= link_to "Editar", edit_artigo_path(@artigo)%><br><br><br>
+    <%= link_to "Editar", edit_artigo_path(@artigo)%><br>
+    <%= link_to "Apagar esse artigo", artigo_path(@artigo), data: {
+        turbo_method: :delete,
+        turbo_confirm: "Tem certeza que quer apagar este artigo? Esta ação será irreversível."
+    }%>
+    <br><br><br>
     <h1>    
         <%= @artigo.title %>
     </h1>
@@ -8,6 +13,5 @@
             <%= @artigo.contents %>
         </p>
     </div>
-    <%= link_to "Artigos", artigos_path %>
 </div>
 
