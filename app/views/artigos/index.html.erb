@@ -2,7 +2,7 @@
 
 <div>
   <% @artigos.each do |artigo| %>
-    <div id="li-article">
+    <div id="li-article" onclick="window.location.href=('/artigos/<%= artigo.id %>')">
         <a class="li-article-link" href="/artigos/<%= artigo.id %>">
             <%= artigo.title%>
         </a>

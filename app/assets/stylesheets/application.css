@@ -99,6 +99,8 @@
     background-color: white;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 4px 8px -2px, rgba(0, 0, 0, 0.3) 0px 3px 4px -3px;
     border: 2px solid;
+    cursor: pointer;
+
 }
 
 
