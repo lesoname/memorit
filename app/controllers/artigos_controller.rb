@@ -1,6 +1,6 @@
 class ArtigosController < ApplicationController
   def index
-    @artigos = Artigo.all.page(params[:page])
+    @artigos = Artigo.all
   end
 
   def show

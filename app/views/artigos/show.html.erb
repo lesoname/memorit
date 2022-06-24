@@ -1,10 +1,13 @@
-<h1 class="title-post-show">
-    <%= @artigo.title %>
-</h1>
-<div class="post-content">
-    <p>
-        <%= @artigo.contents %>
-    </p>
+<div>
+    <%= link_to "Editar", edit_artigo_path(@artigo)%><br><br><br>
+    <h1>    
+        <%= @artigo.title %>
+    </h1>
+    <div class="post-content">
+        <p>
+            <%= @artigo.contents %>
+        </p>
+    </div>
+    <%= link_to "Artigos", artigos_path %>
 </div>
-<%= link_to "Artigos", artigos_path %>
 
