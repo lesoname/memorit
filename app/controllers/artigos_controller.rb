@@ -23,6 +23,20 @@ class ArtigosController < ApplicationController
     end
   end
 
+  def edit
+    @artigo = Artigo.find(params[:id])
+  end
+
+  def update
+    @artigo = Artigo.find(params[:id])
+    
+    if @artigo.update(artigo_params)
+      redirect_to @artigo
+    else
+      render :edit, status: :unprocessable_entity
+    end
+  end
+  
   private
     def artigo_params
       params.require(:artigo).permit(:title, :contents)
