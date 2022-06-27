@@ -1,6 +1,7 @@
 class ArtigosController < ApplicationController
   def index
-    @artigos = Artigo.all
+    @q = Artigo.ransack(params[:q])
+    @artigos = @q.result(distinct:true)
   end
 
   def show
