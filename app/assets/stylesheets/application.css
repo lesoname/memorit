@@ -53,18 +53,19 @@
 .logo img {
     cursor: pointer;
     color: black;
-    width: 3.5vh;
+    width: 3vh;
     height: auto;
     vertical-align: middle;
     text-align: center;
     position: relative;
-    padding-left: 2vh;
-    padding-right: 2vh;
+    padding-left: 1vh;
+    padding-right: 1vh;
     margin-top: 2vh;
 }
 
 .icon {
     border: 1px transparent;
+    display:flex;
 
 }
 
@@ -72,15 +73,16 @@
 .icon img{
     cursor: pointer;
     color: black;
-    width: 3.5vh;
+    width: 3vh;
     height: auto;
-    padding-left: 2vh;
-    padding-right: 2vh;
+    padding-left: 1vh;
+    padding-right: 1vh;
     margin-top: 2vh;
+    display:flex;
 }
 
 .icons-sidenav {
-    margin-top: 30vh;
+    margin-top: 33vh;
 }
 
 
