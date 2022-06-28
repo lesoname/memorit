@@ -2,24 +2,34 @@
 <html>
 
   <head>
-    <title>Blog</title>
+    <title>Memorit</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+    <%= favicon_link_tag asset_path('logo.png') %>
   </head>
 
   <body>
 
     <header>
-      <nav id="header-nav">
-        <a id="logo" href="<%= artigos_path %>">Blog</a>
-        <a><%= link_to "Novo artigo", new_artigo_path, class:'new-article-button', method: :get %></a>
+      <nav id="sidenav">
+          <%= link_to image_tag("logo.png"), root_path, class: 'logo' %>
+          <div class="icons-sidenav">
+            <%= button_to image_tag("home.png"), root_path, class: 'icon'%>
+            <%= button_to image_tag("profile.png"), root_path, class: 'icon'%>
+            <%= button_to image_tag("newplus.png"), root_path, class: 'icon'%>
+            <%= button_to image_tag("copy.png"), root_path, class: 'icon'%>
+            <%= button_to image_tag("search.png"), root_path, class: 'icon'%>
+          </div>
       </nav>
     </header>
-    
-    <%= yield %>
+
+    <div id="yield">
+      <%= yield %>
+    </div>
+
   </body>
 
 </html>

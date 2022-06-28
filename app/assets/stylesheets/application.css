@@ -20,7 +20,6 @@
  /*  GLOBAL  */
  * {
     font-family: Nunito;
-    background-color: rgb(241, 237, 237);
     margin: 0;
     padding: 0;
 }
@@ -28,33 +27,60 @@
 
 /*  HOME  */
 
-#title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 5vh;
+
+
+#yield {
+    width: 90%;
+    margin-right: 0;
+    margin-left: auto;
 }
 
 
-#header-nav{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: Poppins;
+
+#sidenav {
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: block;
+    width: auto;
+    height: 100vh;
     background: white;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 15px;
-    height: 8vh;
-    margin-bottom: 5vh;
+    border-right: .1em solid #0000002a;
+    justify-content:center;
 }
 
 
-#logo {
-    font-family: Poppins;
-    font-weight: 900;
-    font-size: 1.8em;
-    text-decoration: none;
+.logo img {
+    cursor: pointer;
     color: black;
-    margin-left: 3vh;
+    width: 3.5vh;
+    height: auto;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    margin-top: 2vh;
+}
+
+.icon {
+    border: 1px transparent;
+
+}
+
+
+.icon img{
+    cursor: pointer;
+    color: black;
+    width: 3.5vh;
+    height: auto;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    margin-top: 2vh;
+}
+
+.icons-sidenav {
+    margin-top: 30vh;
 }
 
 
@@ -89,30 +115,41 @@
 }
 
 
+#all-articles {
+    margin-top: 5vh;
+}
+
 #li-article {
-    margin-top: 2vh;
-    margin-bottom: 5vh;
-    margin-left: 10vh;
-    margin-right: 10vh;
-    border-radius: 12px;
+    margin-bottom: 7vh;
+    margin-left: 5vh;
+    margin-right: 5vh;
+    border-radius: 10px;
     padding: 5vh;
     background-color: white;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 4px 8px -2px, rgba(0, 0, 0, 0.3) 0px 3px 4px -3px;
     border: 2px solid;
+    cursor: pointer;
+    transition: 0.3s;
+
 }
 
+
+#li-article:hover {
+    border: 7px solid;
+    transition: 0.3s
+}
 
 
 .li-article-link{
     text-decoration: none;
     color: black;
-    font-size: 2.5vh;
+    font-size: 1.8vh;
     font-family: Poppins;
 }
 
 
 #posted-at {
-    font-size: .8em;
+    font-size: .6em;
 }
 
 
@@ -193,5 +230,14 @@
     margin-bottom: 2vh;
     height: 3.5vh;
     width: 100%
+}
+
+
+
+
+/* SHOW */
+
+.title-show, .edit-and-destroy {
+    margin-left: 4vh;
 }
 

@@ -1,10 +1,8 @@
-<h1 id="title">Lista de artigos</h1>
-
-<div>
+<div id="all-articles">
   <% @artigos.each do |artigo| %>
-    <div id="li-article">
+    <div id="li-article" onclick="window.location.href=('/artigos/<%= artigo.id %>')">
         <a class="li-article-link" href="/artigos/<%= artigo.id %>">
-            <%= artigo.title%>
+          <%= artigo.title%>
         </a>
         <div id="posted-at">
           🕣 postado <%= time_tag artigo.created_at, "data-local": "time-ago" %>
