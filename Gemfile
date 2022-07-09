@@ -11,12 +11,15 @@ gem "importmap-rails"
 gem "turbo-rails"
 gem "stimulus-rails"
 gem "jbuilder"
-gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
 gem "image_processing", "~> 1.2"
 gem 'ransack', '~> 3.2', '>= 3.2.1'
 gem 'will_paginate', '~> 3.1'
+gem 'figaro'
 
+# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+gem "tzinfo-data"
+gem 'tzinfo'
 
 group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
