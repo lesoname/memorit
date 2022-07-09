@@ -13,8 +13,8 @@ gem "stimulus-rails"
 gem "jbuilder"
 gem "bootsnap", require: false
 gem "image_processing", "~> 1.2"
-gem 'kaminari', '~> 1.2', '>= 1.2.2'
 gem 'ransack', '~> 3.2', '>= 3.2.1'
+gem 'will_paginate', '~> 3.1'
 gem 'figaro'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
