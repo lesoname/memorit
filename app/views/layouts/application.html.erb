@@ -14,15 +14,9 @@
   <body>
 
     <header>
-      <nav id="sidenav">
-          <%= link_to image_tag("logo.png"), root_path, class: 'logo' %>
-          <div class="icons-sidenav">
-            <%= link_to image_tag("home.png"), root_path, class: 'icon'%>
-            <%= link_to image_tag("profile.png"), root_path, class: 'icon'%>
-            <%= link_to image_tag("newplus.png"), new_artigo_path, class: 'icon'%>
-            <%= link_to image_tag("copy.png"), root_path, class: 'icon'%>
-            <%= link_to image_tag("search.png"), root_path, class: 'icon'%>
-          </div>
+      <nav id="header-nav">
+        <%= link_to image_tag("logo.png"), root_path, class: 'logo' %>
+        <a><%= link_to "Novo artigo", new_artigo_path, class:'new-article-button', method: :get %></a>
       </nav>
     </header>
 

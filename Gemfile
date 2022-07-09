@@ -15,6 +15,7 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
 gem "image_processing", "~> 1.2"
 gem 'ransack', '~> 3.2', '>= 3.2.1'
+gem 'will_paginate', '~> 3.1'
 
 
 group :development, :test do

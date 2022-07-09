@@ -1,7 +1,7 @@
 class ArtigosController < ApplicationController
   def index
-    @q = Artigo.ransack(params[:q])
-    @artigos = @q.result(distinct:true)
+    @q = Artigo.paginate(page: params[:page], per_page: 5).ransack(params[:q])
+    @artigos = @q.result(distinct: true)
   end
 
   def show
