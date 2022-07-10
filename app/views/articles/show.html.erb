@@ -1,0 +1,19 @@
+<div>
+    <div class="edit-and-destroy">
+        <%= link_to "Editar", edit_article_path(@article)%><br>
+        <%= link_to "Apagar esse artigo", article_path(@article), data: {
+            turbo_method: :delete,
+            turbo_confirm: "Tem certeza que quer apagar este artigo? Esta ação será irreversível."
+        }%>
+    </div>
+    <br><br><br>
+    <h1 class="title-show">    
+        <%= @article.title %>
+    </h1>
+    <div class="post-content">
+        <p>
+            <%= @article.content %>
+        </p>
+    </div>
+</div>
+
