@@ -1,0 +1,21 @@
+<div>
+  <%= search_form_for @q do |f| %>
+    <%= f.search_field :title_cont, placeholder: "Pesquisar..." %>
+  <% end %>
+</div>
+<div id="all-articles">
+  <% @articles.each do |article| %>
+    <div id="li-article" onclick="window.location.href=('/articles/<%= article.id %>')">
+        <a class="li-article-link" href="/articles/<%= article.id %>">
+          <div><%= article.title %></div>
+          <div><%= truncate(strip_tags(article.content.to_s), length: 350, omission: '...') %></div>
+        </a>
+        <div id="posted-at">
+          🕣 postado <%= time_tag article.created_at, "data-local": "time-ago" %>
+        </div>
+    </div>
+  <% end %>
+</div>
+<div>
+  <%= will_paginate @posts %>
+</div>
