@@ -231,6 +231,19 @@ body {
 }
 
 
+ .current {
+    font-family: Poppins;
+    font-size: 2vh;
+    padding: 0.7vh;
+    background: rgb(39, 39, 39);
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+    
+}
+
+
+
 
 /*   FORM   */
 
