@@ -8,17 +8,17 @@ default: &default
 development:
   <<: *default
   database: blog_dev
-  username: <%= ENV["DATABASE_USER"] %>
-  host: <%= ENV["DATABASE_HOST"] %>
+  username: <%= Rails.application.credentials.db_username %>
+  host: <%= Rails.application.credentials.db_host %>
  
 test:
   <<: *default
   database: blog_test
-  username: <%= ENV["DATABASE_USER"] %>
-  host: <%= ENV["DATABASE_HOST"] %>
+  username: <%= Rails.application.credentials.db_username %>
+  host: <%= Rails.application.credentials.db_host %>
 
 production:
   <<: *default
   database: blog_prod
-  username: <%= ENV["DATABASE_USER"] %>
-  host: <%= ENV["DATABASE_HOST"] %>
+  username: <%= Rails.application.credentials.db_username %>
+  host: <%= Rails.application.credentials.db_host %>
