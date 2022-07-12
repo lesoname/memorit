@@ -17,6 +17,7 @@ gem 'ransack', '~> 3.2', '>= 3.2.1'
 gem 'will_paginate', '~> 3.1'
 gem 'figaro'
 gem 'friendly_id', '~> 5.4.0'
+gem 'devise', '~> 4.8', '>= 4.8.1'
 
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

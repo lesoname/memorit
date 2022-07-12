@@ -158,7 +158,7 @@ body {
     border: 2px solid;
     cursor: pointer;
     transition: 0.3s;
-
+    word-wrap: break-word;
 }
 
 
@@ -180,6 +180,12 @@ body {
 }
 
 
+
+.article-title {
+    font-size: 3vh;
+    padding-bottom: 2vh;
+    font-weight: 600;
+}
 
 
 #posted-at {

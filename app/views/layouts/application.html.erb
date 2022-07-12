@@ -17,10 +17,12 @@
       <nav id="header-nav">
         <%= link_to image_tag("logo.png"), root_path, class: 'logo' %>
         <a><%= link_to "Novo artigo", new_article_path, class:'new-article-button', method: :get %></a>
+        <%= render 'layouts/alerts' %>
       </nav>
     </header>
 
     <div id="yield">
+
       <%= yield %>
     </div>
 
