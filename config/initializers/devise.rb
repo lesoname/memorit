@@ -6,6 +6,9 @@
 # breaking changes in upgrades (i.e., in the event that future versions of
 # Devise change the default values for those options).
 #
+
+
+
 # Use this hook to configure devise mailer, warden hooks and so forth.
 # Many of these configuration options can be set straight in your model.
 Devise.setup do |config|
@@ -15,6 +18,8 @@ Devise.setup do |config|
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
   # config.secret_key = '119f71b11b3821d2e1fc1b82c63432906bc59c2b4e27afe5ec6dca1b2accea310c620cf10501519e5b1f363b9152f15316a9683a9110c2f07967c7f2239910c4'
+
+ 
 
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
