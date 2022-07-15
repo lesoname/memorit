@@ -5,8 +5,8 @@
 </div>
 <div id="all-articles">
   <% @articles.each do |article| %>
-    <div id="li-article" onclick="window.location.href=('/articles/<%= article.id %>')">
-        <a class="li-article-link" href="/articles/<%= article.id %>">
+    <div id="li-article" onclick="window.location.href=('/articles/<%= article.friendly_id %>')">
+        <a class="li-article-link" href="/articles/<%= article.friendly_id %>">
           <div class="article-title"><%= article.title %></div>
           <div><%= truncate(strip_tags(article.content.to_s), length: 350, omission: '...') %></div>
         </a>
