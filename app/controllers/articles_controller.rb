@@ -9,7 +9,13 @@ class ArticlesController < ApplicationController
   end
 
   def new
-    @article = Article.new
+    if current_user
+      @article = Article.new
+
+    else
+      redirect_to root_path
+    end
+    
   end
   
   #def post creation
