@@ -319,3 +319,21 @@ body {
 .title-show, .edit-and-destroy {
     margin-left: 4vh;
 }
+
+.desconect-user-button {
+    color: rgb(221, 62, 62);
+    background-color: rgb(221, 62, 62);
+    text-align: center;
+    color: white;
+    border-radius: 13px;
+    border: 1px transparent;
+    font-size: .8em;
+    padding: 1.1vh;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 8px 10px -3px, rgba(0, 0, 0, 0.3) 0px 3px 4px -3px;
+    width: 11vh;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    font-family: Poppins;
+    margin-right: 3vh;
+}

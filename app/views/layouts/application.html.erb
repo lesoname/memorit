@@ -13,14 +13,11 @@
 
   <body>
 
-    <header>
-      <nav id="header-nav">
-        <%= link_to image_tag("logo.png"), root_path, class: 'logo' %>
-        <a><%= link_to "Novo artigo", new_article_path, class:'new-article-button', method: :get %></a>
-      </nav>
-    </header>
+    <%= render 'user/session_manager' %>
+    
 
     <div id="yield">
+
       <%= yield %>
     </div>
 
