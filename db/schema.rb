@@ -52,7 +52,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_07_10_023725) do
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
   end
 
-  create_table "articles", id: :bigint, default: -> { "nextval('artigos_id_seq'::regclass)" }, force: :cascade do |t|
+  create_table "articles", force: :cascade do |t|
     t.string "title"
     t.text "content"
     t.datetime "created_at", null: false
