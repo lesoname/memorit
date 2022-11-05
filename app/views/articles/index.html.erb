@@ -5,7 +5,7 @@
 
   <% else %>
     <%= search_form_for @q do |f| %>
-      <%= f.search_field :title_cont, placeholder: "Pesquisar..." %>
+      <%= f.search_field :title_cont, placeholder: "Search..." %>
     <% end %>
   </div>
   <div id="all-articles">
@@ -16,7 +16,7 @@
             <div><%= truncate(strip_tags(article.content.to_s), length: 350, omission: '...') %></div>
           </a>
           <div id="posted-at">
-            🕣 postado <%= time_tag article.created_at, "data-local": "time-ago" %>
+            🕣 posted <%= time_tag article.created_at, "data-local": "time-ago" %>
           </div>
       </div>
     <% end %>

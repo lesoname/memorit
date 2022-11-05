@@ -1,7 +1,7 @@
 <%= form_with model: article do |form| %>
     <div id="form">
         <div>
-            <%= form.label :Título %><br>
+            <%= form.label :Title %><br>
             <%= form.text_field :title %>
             <% article.errors.full_messages_for(:title).each do |message| %>
                 <div><%= message %></div>
@@ -9,14 +9,14 @@
         </div>
 
         <div>
-            <%= form.label :Conteúdo %><br>
+            <%= form.label :Content %><br>
             <%= form.rich_text_area :content %>
             <% article.errors.full_messages_for(:content).each do |message| %>
                 <div><%= message %></div>
             <% end %>
         </div>
                 <div>
-                    <%= form.submit "Publicar", class: 'button-publish-in-form' %>
+                    <%= form.submit "Publish", class: 'button-publish-in-form' %>
                 </div>
         <% end %>
     </div>

@@ -24,7 +24,6 @@
 /tmp/storage/*
 !/tmp/storage/
 !/tmp/storage/.keep
-
 /public/assets
 /config/application.yml
 /config/credentials.yml.enc
