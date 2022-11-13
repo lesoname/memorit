@@ -1,0 +1,12 @@
+
+<header>
+      <nav id="header-nav">
+        <%= link_to image_tag(""), root_path, class: 'logo' %>
+        <% if current_user %>
+            <a><%= link_to image_tag("newplus.png"), new_article_path, class:'new-article-icon', method: :get %></a>
+            <a><%= link_to "Disconnect", destroy_user_session_path,class:'desconect-user-button', data: {turbo_method: :delete} %></a>
+        <% else %>
+            <a><%= link_to "Login", new_user_session_url, class:'new-article-button', method: :get %></a>
+        <% end %>
+      </nav>
+</header>
