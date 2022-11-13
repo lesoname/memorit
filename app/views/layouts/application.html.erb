@@ -12,12 +12,13 @@
   </head>
 
   <body>
-
-    <%= render 'user/session_manager' %>
-    
+    <% if current_page?(:controller => 'admins', :action => 'index') %>
+      <%= render 'user/session_manager_admins' %>
+    <%else%>
+      <%= render 'user/session_manager' %>
+    <% end %>
 
     <div id="yield">
-
       <%= yield %>
     </div>
 
