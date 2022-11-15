@@ -91,7 +91,7 @@ body {
     height: 5vh;
     width: 80vw;
     font-size: 2vh;
-    font-family: Poppins;
+    font-family: 'Nunito', sans-serif;
     color: black;
     padding-left: 6vh;
 }
@@ -176,11 +176,11 @@ body {
 
 
 
-.li-article-link{
+.li-article-link {
     text-decoration: none;
     color: black;
     font-size: 1.8vh;
-    font-family: Poppins;
+    font-family: 'Nunito', sans-serif;
 }
 
 
@@ -189,11 +189,18 @@ body {
     font-size: 3vh;
     padding-bottom: 2vh;
     font-weight: 600;
+    font-family: 'Nunito', sans-serif;
+}
+
+.text_preview {
+    font-family: 'Nunito', sans-serif;
 }
 
 
-#posted-at {
-    font-size: .6em;
+.hour, .posted-at{
+    margin-top:.7vh;
+    font-size: .9em;
+    font-family: 'Nunito', sans-serif;
 }
 
 
@@ -281,7 +288,7 @@ body {
     cursor: pointer;
     text-decoration: none;
     position: relative;
-    font-family: Poppins;
+    font-family: 'Nunito', sans-serif;
     margin-right: 3vh;
 }
 
@@ -312,7 +319,14 @@ body {
     width: 100%
 }
 
-
+.edit-and-destroy a{
+    font-family: 'Nunito', sans-serif;
+    color:#222;
+    margin-left: 4vh;
+    font-size: large;
+    padding: 10px;
+    vertical-align: middle;
+}
 
 
 
@@ -322,9 +336,11 @@ body {
 
 
 
-.title-show, .edit-and-destroy {
+.title-show {
     margin-left: 4vh;
 }
+
+
 
 .desconect-user-button {
     color: rgb(221, 62, 62);
@@ -340,7 +356,7 @@ body {
     cursor: pointer;
     text-decoration: none;
     position: relative;
-    font-family: Poppins;
+    font-family: 'Nunito', sans-serif;
     margin-right: 3vh;
 }
 
