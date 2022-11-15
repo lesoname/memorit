@@ -15,7 +15,7 @@
  */
  
 
- @import url('https://fonts.googleapis.com/css2?family=Exo:wght@700&family=Montserrat:wght@900&family=Nunito:wght@300&family=Poppins:ital,wght@0,100;0,200;0,400;1,100&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Poppins:wght@300&display=swap');
  
  /*  GLOBAL  */
  * {
@@ -397,36 +397,91 @@ body {
 
 
 .login-button {
-  background-color: #222;
-  border-radius: 13px;
-  border-style: none;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.5;
-  margin: 0;
-  max-width: 10vh;
-  min-height: 44px;
-  min-width: 10px;
-  outline: none;
-  overflow: hidden;
-  padding: 9px 20px 8px;
-  position: relative;
-  text-align: center;
-  text-transform: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  width: 100%;
-  text-decoration: none;
-  border:0 none;
-}
+    background-color: #222;
+    border-radius: 13px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 0;
+    max-width: 10vh;
+    min-height: 44px;
+    min-width: 10px;
+    outline: none;
+    overflow: hidden;
+    padding: 9px 20px 8px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+    text-decoration: none;
+    border:0 none;
+    }
 
 .login-button:hover,
 .login-button:focus {
   opacity: .75;
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    height: 27vh;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+    }
+
+.icons_footer img{
+    margin-top: 3vh;
+    color:#fff;
+    height: 4vh;
+    padding-left: 1vh;
+    padding-right: 1vh;
+}
+
+.links_footer {
+    padding-top: 2vh;
+}
+
+.links_footer a{
+    text-decoration: none;
+    color: #FFFFFF;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    padding-top: 2vh;
+    font-size: large;
+    font-family: 'Nunito', sans-serif;
+    }
+
+.links_footer a:hover {
+    cursor: pointer;
+}
+
+.txt_footer p{
+    padding-top: 2vh;
+    font-family: 'Nunito', sans-serif;
+    font-size: large;
+    }
+
+.donate img{
+    margin-top: 2vh;
+    color:#fff;
+    height: 4vh;
+    padding-left: 1vh;
+    padding-right: 1vh;
 }
