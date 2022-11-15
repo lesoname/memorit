@@ -12,11 +12,13 @@
     <% @articles.each do |article| %>
       <div id="li-article" onclick="window.location.href=('/articles/<%= article.friendly_id %>')">
           <a class="li-article-link" href="/articles/<%= article.friendly_id %>">
-            <div class="article-title"><%= article.title %></div>
-            <div><%= truncate(strip_tags(article.content.to_s), length: 350, omission: '...') %></div>
+            <div class="article-title"><%= article.title %>
+            </div>
+            <div class="text_preview"><%= truncate(strip_tags(article.content.to_s), length: 350, omission: '...') %>
+            </div>
           </a>
-          <div id="posted-at">
-            🕣 posted <%= time_tag article.created_at, "data-local": "time-ago" %>
+          <div class="posted-at">
+            🕣 posted <%= time_tag article.created_at, "data-local": "time-ago", class: 'hour' %>
           </div>
       </div>
     <% end %>

@@ -91,7 +91,7 @@ body {
     height: 5vh;
     width: 80vw;
     font-size: 2vh;
-    font-family: Poppins;
+    font-family: 'Nunito', sans-serif;
     color: black;
     padding-left: 6vh;
 }
@@ -192,9 +192,15 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
+.text_preview {
+    font-family: 'Nunito', sans-serif;
+}
 
-#posted-at {
-    font-size: .6em;
+
+.hour, .posted-at{
+    margin-top:.7vh;
+    font-size: .9em;
+    font-family: 'Nunito', sans-serif;
 }
 
 
