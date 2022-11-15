@@ -379,7 +379,8 @@ body {
 .login-screen {
     max-width: 65%;
     margin: auto;
-    margin-top: 25vh;
+    margin-top: 20vh;
+    margin-bottom: 12vh;
 
 }
 
@@ -415,6 +416,7 @@ body {
 
 
 .login-button {
+    margin-top: 1vh;
     background-color: #222;
     border-radius: 13px;
     border-style: none;
@@ -426,7 +428,6 @@ body {
     font-size: 16px;
     font-weight: 700;
     line-height: 1.5;
-    margin: 0;
     max-width: 10vh;
     min-height: 44px;
     min-width: 10px;
@@ -447,6 +448,15 @@ body {
 .login-button:hover,
 .login-button:focus {
   opacity: .75;
+}
+
+.message-error {
+    color: red;
+    margin-top: 1vh;
+}
+
+.remember {
+    margin-top: 1vh;
 }
 
 
@@ -504,3 +514,4 @@ body {
     padding-left: 1vh;
     padding-right: 1vh;
     }
+
