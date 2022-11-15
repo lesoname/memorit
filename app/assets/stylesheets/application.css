@@ -315,6 +315,8 @@ body {
 
 
 
+
+
 /* SHOW */
 
 
@@ -440,11 +442,11 @@ body {
     color: #fff;
     text-align: center;
     height: 27vh;
-    position: fixed;
+    position: relative;
     bottom: 0px;
     left: 0px;
     right: 0px;
-    margin-bottom: 0px;
+    bottom: 0px;
     }
 
 .icons_footer img{

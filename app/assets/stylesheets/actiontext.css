@@ -28,4 +28,20 @@
 .trix-content action-text-attachment .attachment {
   padding: 0 !important;
   max-width: 100% !important;
+  height: 350px;
+  overflow-y: auto;
+}
+
+.trix-content {
+  min-height: 300px;
+  overflow-y: auto;
+}
+
+
+input.article_content_trix_input_article {
+  height: 300px;
+}
+
+.button-publish-in-form {
+  margin-bottom: 100px;
 }
