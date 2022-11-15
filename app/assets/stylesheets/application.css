@@ -430,3 +430,15 @@ body {
 .login-button:focus {
   opacity: .75;
 }
+
+/*  ERROR  */
+
+.message-error{
+    background-color: red;
+    border-radius: 5px;
+    max-width: 65%;
+    margin-left: 415px;
+    margin-right: 415px;
+    text-align: center;
+    color: white;
+}
