@@ -1,7 +1,11 @@
 class ArticlesController < ApplicationController
   def index
-    @q = Article.paginate(page: params[:page], per_page: 3).ransack(params[:q])
-    @articles = @q.result(distinct: true)
+    if User.all.empty?
+      redirect_to new_user_registration_path
+    else
+      @q = Article.paginate(page: params[:page], per_page: 3).ransack(params[:q])
+      @articles = @q.result(distinct: true)
+    end
   end
 
   def show
