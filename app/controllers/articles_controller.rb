@@ -25,6 +25,7 @@ class ArticlesController < ApplicationController
   #def post creation
   def create
     @article = Article.friendly.new(article_params)
+    @article.user = current_user
     
     if @article.save
       redirect_to @article
