@@ -35,7 +35,11 @@ class ArticlesController < ApplicationController
   end
 
   def edit
-    @article = Article.friendly.find(params[:id])
+    if current_user
+      @article = Article.friendly.find(params[:id])
+    else
+      redirect_to root_path
+    end
   end
 
   def update
@@ -49,10 +53,15 @@ class ArticlesController < ApplicationController
   end
   
   def destroy
-    @article = Article.friendly.find(params[:id])
-    @article.destroy
+    if current_user
+      @article = Article.friendly.find(params[:id])
+      @article.destroy
+      redirect_to root_path, status: :see_other
+    else
+      redirect_to root_path, status: :see_other
+    end
+    
 
-    redirect_to root_path, status: :see_other
   end
 
   private
