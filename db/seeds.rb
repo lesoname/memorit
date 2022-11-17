@@ -9,4 +9,4 @@
 
 
 
-User.create(email: 'guy@gmail.com', password: '111111', password_confirmation: '111111')
+User.create(name: 'rootguy', email: 'guy@gmail.com', password: '111111', password_confirmation: '111111')

@@ -18,7 +18,7 @@
             </div>
           </a>
           <div class="posted-at">
-            🕣 posted <%= time_tag article.created_at, "data-local": "time-ago", class: 'hour' %>
+            🕣 posted by <b><%= article.user.name %></b> <%= time_tag article.created_at, "data-local": "time-ago", class: 'hour' %>
           </div>
       </div>
     <% end %>
