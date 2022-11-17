@@ -5,8 +5,8 @@ services:
       image: postgres:14.6
       restart: always
       environment:
-        - POSTGRES_USER=blog_dev_user
-        - POSTGRES_PASSWORD=2770562as
+        - POSTGRES_USER=userpostgres
+        - POSTGRES_PASSWORD=passwordpostgres
       
 
       ports:
