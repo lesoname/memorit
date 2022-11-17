@@ -1,10 +1,8 @@
-<% if current_user || User.all.empty? %>
-  <% if User.all.empty? %>
+<% if User.all.empty? %>
     <h2>registration is required for first setup</h2>
   <% else %>
     <h2>Sign up</h2>
   <% end %>
-
     <%= form_for(resource, as: resource_name, url: registration_path(resource_name), data: { turbo: false }) do |f| %>
       <%= render "devise/shared/error_messages", resource: resource %>
 
@@ -32,14 +30,3 @@
     <% end %>
 
     <%= render "devise/shared/links" %>
-
-
-<% else %>
-  
-  <h1>ESPERTINHO VOCÊ</h1>
-  
-
-<% end %>
-
-
-
