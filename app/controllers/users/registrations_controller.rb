@@ -1,17 +1,17 @@
 # frozen_string_literal: true
 
 class Users::RegistrationsController < Devise::RegistrationsController
-   before_action :configure_sign_up_params, only: [:create]
-   before_action :configure_account_update_params, only: [:update]
+  # before_action :configure_sign_up_params, only: [:create]
+  # before_action :configure_account_update_params, only: [:update]
   skip_before_action :require_no_authentication, only: [:new, :create]
   # GET /resource/sign_up
-  def new
-    if current_user
-      super
-   else
-    redirect_to root_path  
-   end
-  end
+#  def new
+#    if current_user
+#      super
+#   else
+#    redirect_to root_path  
+#   end
+#  end
 
   # POST /resource
   # def create
