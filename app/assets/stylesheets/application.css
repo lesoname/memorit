@@ -216,13 +216,18 @@ body {
 }
 
 
-
-
 .title-post-show {
     margin-left: 20px;
     margin-right: 20px;
 }
 
+
+.title-show {
+    padding-left: 5vh;
+    display: table;
+    margin: 0 auto;
+    width: 70%;
+}
 
 
 .post-content {
@@ -230,9 +235,20 @@ body {
     margin-right: 40px;
 }
 
+
 .trix-content {
-    margin-bottom: 15vh;
+    padding-top: 5vh;
+    padding-bottom: 15vh;
+    display: table;
+    margin: 0 auto;
+    width: 70%;
 }
+
+.trix-content div,li,a {
+    font-family: Nunito, sans-serif;
+}
+
+
 
 
 
@@ -243,7 +259,6 @@ body {
     text-align: center;
     margin-bottom: 10vh;
 }
-
 
 
 .pagination {
@@ -337,11 +352,6 @@ body {
 /* SHOW */
 
 
-
-
-.title-show {
-    margin-left: 4vh;
-}
 
 
 
