@@ -28,7 +28,7 @@
 .trix-content action-text-attachment .attachment {
   padding: 0 !important;
   max-width: 100% !important;
-  height: 350px;
+  height: fit-content;
   overflow-y: auto;
 
 }
@@ -41,10 +41,6 @@
 .trix-content div,a,strong,.title-show{
   font-family: 'Nunito', sans-serif;
   }
-
-.post-content {
-  font-family: 'Nunito', sans-serif;
-}
 
 
 input.article_content_trix_input_article {

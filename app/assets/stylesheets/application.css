@@ -224,6 +224,7 @@ body {
 
 .title-show {
     margin-left: 4vh;
+    padding-bottom: 7vh;
 }
 
 
@@ -231,6 +232,16 @@ body {
     margin-left: 40px;
     margin-right: 40px;
 }
+
+
+.post-content div, .post-content ul{
+    display: table;
+    margin: 0 auto;
+    width: 70%;
+    min-width: 40vh;
+}
+
+
 
 
 .trix-content {
@@ -492,6 +503,7 @@ body {
     left: 0px;
     right: 0px;
     bottom: 0px;
+    margin-top: 4vh;
     }
 
 .icons_footer img{
