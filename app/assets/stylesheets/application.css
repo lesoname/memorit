@@ -223,10 +223,7 @@ body {
 
 
 .title-show {
-    padding-left: 5vh;
-    display: table;
-    margin: 0 auto;
-    width: 70%;
+    margin-left: 4vh;
 }
 
 
@@ -237,17 +234,13 @@ body {
 
 
 .trix-content {
-    padding-top: 5vh;
-    padding-bottom: 15vh;
-    display: table;
-    margin: 0 auto;
-    width: 70%;
+    margin-bottom: 15vh;
 }
+
 
 .trix-content div,li,a {
     font-family: Nunito, sans-serif;
 }
-
 
 
 
